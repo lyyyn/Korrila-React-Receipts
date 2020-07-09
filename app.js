@@ -39,6 +39,7 @@ class App extends React.Component {
                                         <span className="order-title">Cost: </span>
                                         <span className="order-detail">{receipt.order.cost}</span>
                                     </p>
+                                    <p><button className="receipt-button">Paid</button></p>
                                 </div>
                             )
                         }
