@@ -4,6 +4,14 @@ class App extends React.Component {
         this.state = {
             receipts
         }
+
+        this.setAsPaid = this.setAsPaid.bind(this);
+    }
+
+    setAsPaid = idx => {
+        console.log(idx);
+        
+        // this.setState(this.state.receipts[idx].paid: !this.state.receipts[idx].paid);
     }
 
     render() {
@@ -39,7 +47,7 @@ class App extends React.Component {
                                         <span className="order-title">Cost: </span>
                                         <span className="order-detail">{receipt.order.cost}</span>
                                     </p>
-                                    <p><button className="receipt-button">Paid</button></p>
+                                    <p><button className="receipt-button" onClick={(event) => this.setAsPaid(idx)}>Make Payment {idx}</button></p>
                                 </div>
                             )
                         }

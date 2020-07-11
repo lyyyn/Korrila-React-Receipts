@@ -27,7 +27,7 @@ const receipts = [
             drink: 'Korchata',
             cost: 19
         },
-        paid: false
+        paid: true
     },
     {
         person: 'Matt',
@@ -42,6 +42,6 @@ const receipts = [
             drink: 'Sparkling Blood Orange Soda',
             cost: 20
         },
-        paid: true
+        paid: false
     }
 ]
